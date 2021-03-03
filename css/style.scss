@@ -1,3 +1,65 @@
 body {
 	font-family: 'Noto Serif', 'Noto Serif JP' ,sans-serif;
 }
+
+.container {
+	padding: 0 120px;
+}
+
+header {
+	.header {
+		position: absolute;
+		top: 0;
+
+		&__image {
+			background: center / cover no-repeat url(../images/fv-bgi_01@2x.jpg);
+			width: 100vw;
+			height: 100vh;
+		}
+
+		&__contents {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 70px;
+		}
+
+		&__logo {
+			color: white;
+			font-style: oblique;
+			font-size: 26px;
+		}
+
+		&__nav-list {
+			width: 350px;
+			ul {
+				display: flex;
+				justify-content: space-between;
+
+				li {
+					a {
+						color: white;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+
+		&__title {
+			color: white;
+			position: relative;
+			top: 460px;
+			width: 604px;
+
+			h2 {
+				font-size: 70px;
+				padding-bottom: 30px;
+			}
+
+			h3 {
+				font-size: 40px;
+				text-align: center;
+			}
+		}
+	}
+}

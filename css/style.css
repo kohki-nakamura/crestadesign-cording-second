@@ -1,4 +1,73 @@
 body {
   font-family: 'Noto Serif', 'Noto Serif JP' ,sans-serif;
 }
+
+.container {
+  padding: 0 120px;
+}
+
+header .header {
+  position: absolute;
+  top: 0;
+}
+
+header .header__image {
+  background: center/cover no-repeat url(../images/fv-bgi_01@2x.jpg);
+  width: 100vw;
+  height: 100vh;
+}
+
+header .header__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 70px;
+}
+
+header .header__logo {
+  color: white;
+  font-style: oblique;
+  font-size: 26px;
+}
+
+header .header__nav-list {
+  width: 350px;
+}
+
+header .header__nav-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header__nav-list ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+header .header__title {
+  color: white;
+  position: relative;
+  top: 460px;
+  width: 604px;
+}
+
+header .header__title h2 {
+  font-size: 70px;
+  padding-bottom: 30px;
+}
+
+header .header__title h3 {
+  font-size: 40px;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
