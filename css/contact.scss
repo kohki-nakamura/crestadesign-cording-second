@@ -1,0 +1,52 @@
+header {
+	.header {
+		&__image {
+			background: center / cover no-repeat url(../images/contact-bgi@2x.jpg);
+			height: 453px;
+		}
+
+		&__title {
+			position: static;
+			width: 100%;
+			text-align: center;
+			padding-top: 200px;
+
+			h2 {
+				font-size: 60px;
+				font-style: italic;
+			}
+		}
+	}
+
+	.bottom-title {
+		padding-top: 0;
+		color: white;
+		opacity: 0.1;
+	}
+}
+
+.contact-form {
+	margin: 100px 60px;
+
+	&__content {
+		padding: 20px 0 10px;
+	}
+
+	label {
+		padding: 0 20px 0 5px;
+	}
+
+	.full-form {
+		width: 100%;
+		padding: 5px;
+		font-size: 16px;
+	}
+
+	textarea {
+		resize: none;
+	}
+
+	button {
+		display: block;
+	}
+}

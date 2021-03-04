@@ -1,0 +1,148 @@
+.concept {
+  padding: 120px 0;
+}
+
+.concept__title::after {
+  border-top: black 3px solid;
+}
+
+.concept h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.concept__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.concept__content--text {
+  width: 440px;
+  line-height: 30px;
+  padding-right: 80px;
+}
+
+.concept__bottom {
+  text-align: right;
+  color: #171717;
+}
+
+.works {
+  background: center/cover no-repeat url(../images/works-bgi@2x.jpg);
+  padding: 120px 0;
+}
+
+.works__title {
+  color: white;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.works__title::after {
+  border-top: 3px solid;
+}
+
+.works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.works__content--card {
+  width: 320px;
+}
+
+.works__content--card .card-text {
+  padding: 20px;
+  background-color: white;
+  line-height: 30px;
+}
+
+.works__content--card:nth-child(2) {
+  padding: 0 20px;
+}
+
+.works__bottom {
+  color: white;
+}
+
+.service {
+  padding: 120px 0;
+}
+
+.service__title {
+  padding-bottom: 80px;
+}
+
+.service__title::after {
+  border-top: black 3px solid;
+}
+
+.service__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 320px;
+  width: 100%;
+}
+
+.service__content--image {
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.service__content--image:nth-child(1) {
+  background: center/cover no-repeat url(../images/service-img01@2x.jpg);
+}
+
+.service__content--image:nth-child(2) {
+  background: center/cover no-repeat url(../images/service-img02@2x.jpg);
+}
+
+.service__content--image:nth-child(3) {
+  background: center/cover no-repeat url(../images/service-img03@2x.jpg);
+}
+
+.service__content--image span {
+  color: white;
+  font-size: 40px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 320px;
+}
+
+.service__bottom {
+  text-align: right;
+  color: #171717;
+}
+
+.contact {
+  background: center/cover no-repeat url(../images/contact-bgi@2x.jpg);
+  padding: 120px 0;
+}
+
+.contact h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact__bottom {
+  color: white;
+}
+/*# sourceMappingURL=index.css.map */

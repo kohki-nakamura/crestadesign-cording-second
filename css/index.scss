@@ -1,0 +1,135 @@
+.concept {
+	padding: 120px 0;
+
+	&__title {
+		&::after {
+			border-top: black 3px solid;
+		}
+	}
+
+	h3 {
+		font-size: 30px;
+		text-align: center;
+		padding: 80px 0;
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&--text {
+			width: 440px;
+			line-height: 30px;
+			padding-right: 80px;
+		}
+	}
+
+	&__bottom {
+		text-align: right;
+		color: #171717;
+	}
+}
+
+.works {
+	background: center / cover no-repeat url(../images/works-bgi@2x.jpg);
+	padding: 120px 0;
+
+	&__title {
+		color: white;
+		justify-content: flex-end;
+
+		&::after {
+			border-top: 3px solid;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: center;
+		margin-top: 100px;
+
+		&--card {
+			width: 320px;
+
+			.card-text {
+				padding: 20px;
+				background-color: white;
+				line-height: 30px;
+			}
+
+			&:nth-child(2) {
+				padding: 0 20px;
+			}
+		}
+	}
+
+	&__bottom {
+		color: white;
+	}
+}
+
+.service {
+	padding: 120px 0;
+
+	&__title {
+		padding-bottom: 80px;
+
+		&::after {
+			border-top: black 3px solid;
+		}
+	}
+
+	&__content {
+		display: flex;
+		height: 320px;
+		width: 100%;
+
+		&--image {
+			width: calc(100% / 3);
+			height: auto;
+
+			&:nth-child(1) {
+				background: center / cover no-repeat url(../images/service-img01@2x.jpg);
+			}
+
+			&:nth-child(2) {
+				background: center / cover no-repeat url(../images/service-img02@2x.jpg);
+			}
+
+			&:nth-child(3) {
+				background: center / cover no-repeat url(../images/service-img03@2x.jpg);
+			}
+
+			span {
+				color: white;
+				font-size: 40px;
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+				line-height: 320px;
+			}
+		}
+	}
+
+	&__bottom {
+		text-align: right;
+		color: #171717;
+	}
+}
+
+.contact {
+	background: center / cover no-repeat url(../images/contact-bgi@2x.jpg);
+	padding: 120px 0;
+
+	h3 {
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	&__bottom {
+		color: white;
+	}
+}

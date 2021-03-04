@@ -1,0 +1,49 @@
+header .header__image {
+  background: center/cover no-repeat url(../images/contact-bgi@2x.jpg);
+  height: 453px;
+}
+
+header .header__title {
+  position: static;
+  width: 100%;
+  text-align: center;
+  padding-top: 200px;
+}
+
+header .header__title h2 {
+  font-size: 60px;
+  font-style: italic;
+}
+
+header .bottom-title {
+  padding-top: 0;
+  color: white;
+  opacity: 0.1;
+}
+
+.contact-form {
+  margin: 100px 60px;
+}
+
+.contact-form__content {
+  padding: 20px 0 10px;
+}
+
+.contact-form label {
+  padding: 0 20px 0 5px;
+}
+
+.contact-form .full-form {
+  width: 100%;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: none;
+}
+
+.contact-form button {
+  display: block;
+}
+/*# sourceMappingURL=contact.css.map */
