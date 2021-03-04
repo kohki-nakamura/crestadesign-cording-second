@@ -147,7 +147,6 @@ header .header__title h3 {
 
 .works {
   background: center/cover no-repeat url(../images/works-bgi@2x.jpg);
-  z-index: 1;
   padding: 120px 0;
 }
 
@@ -188,7 +187,6 @@ header .header__title h3 {
 
 .works__bottom {
   color: white;
-  opacity: 0.1;
 }
 
 .service {
@@ -240,5 +238,21 @@ header .header__title h3 {
 .service__bottom {
   text-align: right;
   color: #171717;
+}
+
+.contact {
+  background: center/cover no-repeat url(../images/contact-bgi@2x.jpg);
+  padding: 120px 0;
+}
+
+.contact h3 {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.contact__bottom {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

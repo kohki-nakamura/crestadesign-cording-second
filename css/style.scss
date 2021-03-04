@@ -132,7 +132,6 @@ header {
 
 .works {
 	background: center / cover no-repeat url(../images/works-bgi@2x.jpg);
-	z-index: 1;
 	padding: 120px 0;
 
 	&__title {
@@ -166,7 +165,6 @@ header {
 
 	&__bottom {
 		color: white;
-		opacity: 0.1;
 	}
 }
 
@@ -216,5 +214,21 @@ header {
 	&__bottom {
 		text-align: right;
 		color: #171717;
+	}
+}
+
+.contact {
+	background: center / cover no-repeat url(../images/contact-bgi@2x.jpg);
+	padding: 120px 0;
+
+	h3 {
+		color: white;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 100px;
+	}
+
+	&__bottom {
+		color: white;
 	}
 }
