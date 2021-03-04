@@ -16,6 +16,28 @@ body {
   font-style: italic;
 }
 
+.title::after {
+  border-top: black 3px solid;
+  content: "";
+  width: 3em;
+  margin-left: 30px;
+}
+
+.btn {
+  width: 220px;
+  margin: 80px auto;
+  background-color: #F7D43F;
+  padding: 20px;
+  text-align: center;
+  border-radius: 50px;
+}
+
+.bottom-title {
+  padding-top: 60px;
+  font-size: 90px;
+  opacity: 0.1;
+}
+
 header .header {
   position: absolute;
   top: 0;
@@ -82,7 +104,7 @@ header .header__title h3 {
 }
 
 .concept {
-  margin: 80px 0 50px;
+  padding: 120px 0;
 }
 
 .concept__title {
@@ -92,13 +114,6 @@ header .header__title h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.concept__title::after {
-  border-top: 3px solid;
-  content: "";
-  width: 3em;
-  margin-left: 30px;
 }
 
 .concept h3 {
@@ -111,9 +126,9 @@ header .header__title h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -122,13 +137,51 @@ header .header__title h3 {
 .concept__content--text {
   width: 440px;
   line-height: 30px;
+  padding-right: 80px;
 }
 
-.concept__footer {
+.concept__bottom {
   text-align: right;
-  padding-top: 60px;
-  font-size: 90px;
   color: #171717;
+}
+
+.works {
+  background: center/cover no-repeat url(../images/works-bgi@2x.jpg);
+  z-index: 1;
+  padding: 120px 0;
+}
+
+.works__title {
+  color: white;
+  text-align: right;
+}
+
+.works__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.works__content--card {
+  width: 320px;
+}
+
+.works__content--card .card-text {
+  padding: 20px;
+  background-color: white;
+  line-height: 30px;
+}
+
+.works__content--card:nth-child(2) {
+  padding: 0 20px;
+}
+
+.works__bottom {
+  color: white;
   opacity: 0.1;
 }
 /*# sourceMappingURL=style.css.map */
