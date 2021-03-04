@@ -14,10 +14,15 @@ body {
   font-size: 60px;
   font-weight: bold;
   font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .title::after {
-  border-top: black 3px solid;
   content: "";
   width: 3em;
   margin-left: 30px;
@@ -107,13 +112,8 @@ header .header__title h3 {
   padding: 120px 0;
 }
 
-.concept__title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.concept__title::after {
+  border-top: black 3px solid;
 }
 
 .concept h3 {
@@ -153,7 +153,13 @@ header .header__title h3 {
 
 .works__title {
   color: white;
-  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.works__title::after {
+  border-top: 3px solid;
 }
 
 .works__content {

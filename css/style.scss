@@ -14,9 +14,10 @@ body {
 	font-size: 60px;
 	font-weight: bold;
 	font-style: italic;
+	display: flex;
+	align-items: center;
 
 	&::after {
-		border-top: black 3px solid;
 		content: "";
 		width: 3em;
 		margin-left: 30px;
@@ -100,8 +101,9 @@ header {
 	padding: 120px 0;
 
 	&__title {
-		display: flex;
-		align-items: center;
+		&::after {
+			border-top: black 3px solid;
+		}
 	}
 
 	h3 {
@@ -135,7 +137,11 @@ header {
 
 	&__title {
 		color: white;
-		text-align: right;
+		justify-content: flex-end;
+
+		&::after {
+			border-top: 3px solid;
+		}
 	}
 
 	&__content {
