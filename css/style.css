@@ -190,4 +190,55 @@ header .header__title h3 {
   color: white;
   opacity: 0.1;
 }
+
+.service {
+  padding: 120px 0;
+}
+
+.service__title {
+  padding-bottom: 80px;
+}
+
+.service__title::after {
+  border-top: black 3px solid;
+}
+
+.service__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 320px;
+  width: 100%;
+}
+
+.service__content--image {
+  width: calc(100% / 3);
+  height: auto;
+}
+
+.service__content--image:nth-child(1) {
+  background: center/cover no-repeat url(../images/service-img01@2x.jpg);
+}
+
+.service__content--image:nth-child(2) {
+  background: center/cover no-repeat url(../images/service-img02@2x.jpg);
+}
+
+.service__content--image:nth-child(3) {
+  background: center/cover no-repeat url(../images/service-img03@2x.jpg);
+}
+
+.service__content--image span {
+  color: white;
+  font-size: 40px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  line-height: 320px;
+}
+
+.service__bottom {
+  text-align: right;
+  color: #171717;
+}
 /*# sourceMappingURL=style.css.map */

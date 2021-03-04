@@ -169,3 +169,52 @@ header {
 		opacity: 0.1;
 	}
 }
+
+.service {
+	padding: 120px 0;
+
+	&__title {
+		padding-bottom: 80px;
+
+		&::after {
+			border-top: black 3px solid;
+		}
+	}
+
+	&__content {
+		display: flex;
+		height: 320px;
+		width: 100%;
+
+		&--image {
+			width: calc(100% / 3);
+			height: auto;
+
+			&:nth-child(1) {
+				background: center / cover no-repeat url(../images/service-img01@2x.jpg);
+			}
+
+			&:nth-child(2) {
+				background: center / cover no-repeat url(../images/service-img02@2x.jpg);
+			}
+
+			&:nth-child(3) {
+				background: center / cover no-repeat url(../images/service-img03@2x.jpg);
+			}
+
+			span {
+				color: white;
+				font-size: 40px;
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+				line-height: 320px;
+			}
+		}
+	}
+
+	&__bottom {
+		text-align: right;
+		color: #171717;
+	}
+}
