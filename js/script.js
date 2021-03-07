@@ -6,4 +6,10 @@ $(function(){
 			$('.header__contents').removeClass('change-color');
 		}
 	});
+
+	$('.burger-btn, .nav-item a').on('click',function(){
+		$('.burger-btn').toggleClass('close');
+		$('.header__nav-wrapper').fadeToggle(500);
+		$('body').toggleClass('noscroll');
+	});
 });

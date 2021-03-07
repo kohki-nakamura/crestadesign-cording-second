@@ -40,11 +40,11 @@ body {
 }
 
 .pc_hid{
-    display: none;
+	display: none;
 }
 
 .sp_hid{
-    display: block;
+	display: block;
 }
 
 header {
@@ -87,7 +87,7 @@ header {
 			}
 		}
 
-		&__nav-list {
+		&__nav {
 			width: 350px;
 			ul {
 				display: flex;
@@ -157,8 +157,8 @@ footer {
 	}
 
 	.pc_hid{
-        display: block;
-    }
+		display: block;
+	}
 
 	.sp_hid{
 		display: none;
@@ -166,9 +166,6 @@ footer {
 
 	header {
 		.header {
-			&__nav-list {
-				display: none;
-			}
 
 			&__title {
 				width: 100%;
@@ -189,6 +186,83 @@ footer {
 			&__logo {
 				width: 100%;
 			}
+
+			&__nav-wrapper {
+				display: none;
+				width: 100vw;
+				height: 100vh;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 2;
+			}
+
+			&__nav {
+				width: 100%;
+				height: 100%;
+				background-color: #282F35;
+				z-index: 2;
+
+				.nav-list {
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-align: center;
+
+					.nav-item {
+						margin-right: 0;
+						margin-bottom: 40px;
+
+					}
+				}
+			}
 		}
+	}
+
+	.burger-btn{
+		display: block;
+		width: 39px;
+		height: 39px;
+		position: relative;
+		z-index: 3;
+		border:none;
+	}
+	.bar{
+		width: 20px;
+		height: 2px;  
+		display: block;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+	}
+	.bar_top{
+		top: 10px;
+	}
+	.bar_mid{
+		top: 50%;
+		transform: translate(-50%,-50%);
+	}
+	.bar_bottom{
+		bottom: 10px;
+	}
+	
+	.burger-btn.close .bar_top{
+		transform: translate(-50%,10px) rotate(45deg);
+		transition: transform .3s;
+	}
+	.burger-btn.close .bar_mid{
+		opacity: 0;
+		transition: opacity .3s;
+	}
+	.burger-btn.close .bar_bottom{
+		transform: translate(-50%,-8px) rotate(-45deg);
+		transition: transform .3s;
+	}
+
+	body.noscroll{
+		overflow: hidden;
 	}
 }
