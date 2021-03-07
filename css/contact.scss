@@ -1,7 +1,7 @@
 header {
 	.header {
 		&__image {
-			background: center / cover no-repeat url(../images/contact-bgi@2x.jpg);
+			background: center / cover no-repeat url(../images/contact-page-bgi@2x.jpg);
 			height: 453px;
 		}
 
@@ -30,6 +30,11 @@ header {
 
 	&__content {
 		padding: 20px 0 10px;
+		font-weight: bold;
+
+		&--checkbox {
+			display: flex;
+		}
 	}
 
 	label {
@@ -38,7 +43,7 @@ header {
 
 	.full-form {
 		width: 100%;
-		padding: 5px;
+		padding: 5px 0;
 		font-size: 16px;
 	}
 
@@ -48,5 +53,32 @@ header {
 
 	button {
 		display: block;
+	}
+}
+
+@media screen and (max-width:767px) {
+	header {
+		.header {
+			&__title {
+				h2 {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
+	.contact-form {
+		margin: 100px 0;
+
+		&__content {
+			&--checkbox {
+				display: block;
+				padding-bottom: 15px;
+
+				.checkbox-item {
+					padding-top: 8px;
+				}
+			}
+		}
 	}
 }

@@ -51,9 +51,17 @@
 			<div class="wrapper">
 				<form action="/" class="contact-form">
 					<div class="contact-form__content">お問い合わせ内容</div>
-					<input type="radio" name="content" id="content"><label for="content">資料請求</label>
-					<input type="radio" name="content" id="phone"><label for="phone">お電話でのご相談を希望</label>
-					<input type="radio" name="content" id="apply"><label for="apply">申し込み</label>
+					<div class="contact-form__content--checkbox">
+						<div class="checkbox-item">
+							<input type="radio" name="content" id="content"><label for="content">資料請求</label>
+						</div>
+						<div class="checkbox-item">
+							<input type="radio" name="content" id="phone"><label for="phone">お電話でのご相談を希望</label>
+						</div>
+						<div class="checkbox-item">
+							<input type="radio" name="content" id="apply"><label for="apply">申し込み</label>
+						</div>
+					</div>
 
 					<div class="contact-form__content">担当者名</div>
 					<input type="text" name="name" id="" class="full-form">

@@ -150,6 +150,7 @@ footer p {
             box-sizing: border-box;
   }
   .wrapper {
+    margin: 0;
     padding: 0;
   }
   .title {

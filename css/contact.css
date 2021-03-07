@@ -1,5 +1,5 @@
 header .header__image {
-  background: center/cover no-repeat url(../images/contact-bgi@2x.jpg);
+  background: center/cover no-repeat url(../images/contact-page-bgi@2x.jpg);
   height: 453px;
 }
 
@@ -27,6 +27,13 @@ header .bottom-title {
 
 .contact-form__content {
   padding: 20px 0 10px;
+  font-weight: bold;
+}
+
+.contact-form__content--checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .contact-form label {
@@ -35,7 +42,7 @@ header .bottom-title {
 
 .contact-form .full-form {
   width: 100%;
-  padding: 5px;
+  padding: 5px 0;
   font-size: 16px;
 }
 
@@ -45,5 +52,21 @@ header .bottom-title {
 
 .contact-form button {
   display: block;
+}
+
+@media screen and (max-width: 767px) {
+  header .header__title h2 {
+    font-size: 30px;
+  }
+  .contact-form {
+    margin: 100px 0;
+  }
+  .contact-form__content--checkbox {
+    display: block;
+    padding-bottom: 15px;
+  }
+  .contact-form__content--checkbox .checkbox-item {
+    padding-top: 8px;
+  }
 }
 /*# sourceMappingURL=contact.css.map */
