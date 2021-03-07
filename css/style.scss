@@ -3,11 +3,11 @@ body {
 }
 
 .container {
-	padding: 0 180px;
+	padding: 0 120px;
 }
 
 .wrapper {
-	padding: 0 150px;
+	padding: 0 50px;
 }
 
 .title {
@@ -118,5 +118,50 @@ footer {
 		font-size: 14px;
 		text-align: center;
 		padding: 30px 0;
+	}
+}
+
+@media screen and (max-width:767px) {
+	main {
+		overflow:hidden;
+	}
+
+	.container {
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+	
+	.wrapper {
+		padding: 0;
+	}
+
+	header {
+		.header {
+			&__nav-list {
+				display: none;
+			}
+
+			&__contents {
+				width: auto;
+			}
+
+			&__title {
+				width: 100%;
+
+				h2 {
+					font-size: 37px;
+					text-align: center;
+				}
+
+				h3 {
+					font-size: 30px;
+				}
+			}
+
+			&__logo {
+				width: 100%;
+			}
+		}
 	}
 }

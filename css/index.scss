@@ -17,11 +17,18 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-wrap: wrap;
 
 		&--text {
 			width: 440px;
 			line-height: 30px;
 			padding-right: 80px;
+		}
+
+		&--image {
+			img {
+				width: 100%;
+			}
 		}
 	}
 
@@ -47,6 +54,7 @@
 	&__content {
 		display: flex;
 		justify-content: center;
+		flex-wrap: wrap;
 		margin-top: 100px;
 
 		&--card {

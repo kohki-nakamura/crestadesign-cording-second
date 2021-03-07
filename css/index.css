@@ -22,12 +22,18 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .concept__content--text {
   width: 440px;
   line-height: 30px;
   padding-right: 80px;
+}
+
+.concept__content--image img {
+  width: 100%;
 }
 
 .concept__bottom {
@@ -58,6 +64,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-top: 100px;
 }
 
