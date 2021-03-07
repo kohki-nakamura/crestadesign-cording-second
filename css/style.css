@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  padding: 0 5%;
+  padding: 0 10%;
 }
 
 .wrapper {
@@ -41,6 +41,14 @@ body {
   padding-top: 60px;
   font-size: 90px;
   opacity: 0.1;
+}
+
+.pc_hid {
+  display: none;
+}
+
+.sp_hid {
+  display: block;
 }
 
 header .header {
@@ -137,28 +145,43 @@ footer p {
   }
   .container {
     width: 100%;
-    padding: 0 10px;
+    padding: 0 6%;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
   .wrapper {
     padding: 0;
   }
+  .title {
+    font-size: 30px;
+  }
+  .bottom-title {
+    font-size: 40px;
+  }
+  .btn {
+    margin: 50px auto;
+  }
+  .pc_hid {
+    display: block;
+  }
+  .sp_hid {
+    display: none;
+  }
   header .header__nav-list {
     display: none;
   }
-  header .header__contents {
-    width: auto;
-  }
   header .header__title {
     width: 100%;
+    top: 320px;
   }
   header .header__title h2 {
     font-size: 37px;
     text-align: center;
+    padding-bottom: 50px;
   }
   header .header__title h3 {
     font-size: 30px;
+    line-height: 50px;
   }
   header .header__logo {
     width: 100%;

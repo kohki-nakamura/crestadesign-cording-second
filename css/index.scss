@@ -1,5 +1,6 @@
 .concept {
 	padding: 120px 0;
+	font-weight: bold;
 
 	&__title {
 		&::after {
@@ -20,7 +21,7 @@
 		flex-wrap: wrap;
 
 		&--text {
-			width: 440px;
+			width: 45%;
 			line-height: 30px;
 			padding-right: 80px;
 		}
@@ -144,5 +145,54 @@
 	a {
 		color: black;
 		text-decoration: none;
+	}
+}
+
+@media screen and (max-width:767px) {
+	.concept {
+		padding: 80px 0;
+
+		h3 {
+			font-size: 20px;
+			padding: 50px 0 30px;
+		}
+
+		&__content {
+			&--text {
+				padding: 0;
+				width: 100%;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.works {
+		padding: 80px 0;
+
+		&__content {
+			margin-top: 50px;
+
+			&--card {
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.service {
+		padding: 80px 0;
+
+		&__content {
+			flex-wrap: wrap;
+			height: auto;
+
+			&--image {
+				width: 100%;
+				margin-bottom: 20px;
+			}
+		}
+	}
+
+	.contact {
+		padding: 80px 0;
 	}
 }
