@@ -97,6 +97,19 @@
 		&--image {
 			width: calc(100% / 3);
 			height: auto;
+			position: relative;
+
+			&:hover {
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: rgba(0,0,0,.5);
+				}
+			}
 
 			&:nth-child(1) {
 				background: center / cover no-repeat url(../images/service-img01@2x.jpg);
